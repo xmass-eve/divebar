@@ -5,7 +5,7 @@
 }
 body {
     background-color: #00001a;
-    width: 100%;
+   
 }
 .header {
     width: 100%;
@@ -121,7 +121,6 @@ body {
 overflow: hidden;
 }
 .areas {
-    position: fixed;
     bottom: 0;
     padding-left: 1em;
     float: left;
@@ -138,10 +137,14 @@ overflow: hidden;
     color: #b3b3ff;
     /*margin-left: 1em;*/
 }
-
+.affix {
+    top: 6em;
+}
 .areas a:hover {
      color: #0000e6;
 }
+    /* EEN AFFIX TOEVOEGEN EN DE JUISTE CODE ID HTML SCHRIJVEN. POSITION FIXED WEGHALEN*/
+
 .blog {
     padding: 2em 15em 30em 5em;
     margin-left: 12%; 
