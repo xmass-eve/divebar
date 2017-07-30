@@ -1,0 +1,115 @@
+/* {
+    border: 1px solid grey;
+    margin: 0;
+    padding: 0;
+}*/
+body {
+    background-color: #00001a;
+}
+.container {
+    width: 100%;
+}
+.continents {
+    background-color: #00001a;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0; 
+    /*border-bottom: 0.5em solid grey;*/
+}
+.continents ul {
+    margin-left: 2em;
+}
+.continents li {
+    float: left;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 1em;
+    list-style-type: none;
+}
+.continents a {
+    color: white;
+    text-decoration: none;
+}
+.continents a:hover {
+    color: #0000e6;
+}
+
+li img {
+    width: 1.5em;
+    margin-bottom: 0em;
+}
+#float-right {
+    float: right;
+}
+.banner {
+    background-image: url('banner2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20em;
+    margin-top: 6.75em;
+    text-align: center;
+    border: 0.5em solid grey;
+}
+.banner h1 {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    margin-top: 1em;
+    font-size: 4em;
+    font-weight: bold;
+    color: beige;
+}
+.aside-nav {
+    float: right;
+    width: 10%;
+    height: 90em;
+    border-left: 2px solid beige;    
+}
+.aside-nav h3 {
+    color: beige;
+    padding: 1em;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+.aside-nav li {
+    list-style-type: none;
+}
+.aside-nav img {
+    width: 4em;
+    margin-bottom: 1em;
+}
+.blog {
+    padding: 5em 15em; 
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+   /*THIS IS THE POLAROID STUFF*/
+
+.images {
+margin-left: 3em;
+}
+div.polaroid {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 0.5em 1em 0 grey;
+    margin-bottom: 1em;
+    float: left;
+    margin: 2em;
+}
+
+.polaroid-text p {
+    text-align: center;
+    padding: 0.5em 1em;  
+    color: #00001a
+}
+#footer {
+    height: 2em;
+    font-size: 1em;
+    color: beige;
+    text-align: center;
+    clear: left;
+}
+
+
