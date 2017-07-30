@@ -12,12 +12,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+    <script src="tqtabootstrap.js"></script>
 </head>
 
 <body>
@@ -29,9 +30,9 @@
                         <div class="dropdown float-lg-left">
                             <button class="dropbtn">Asia</button>
                             <div class="dropdown-content">
-                                <a href="indonesia.html">Indo</a>
-                                <a href="#">Thailand</a>
-                                <a href="#">Philippines</a>
+                                <a href="#" onclick="showPage('indonesia/home.html');">Indo</a>
+                                <a href="#" onclick="showPage('thailand/home.html');">Thailand</a>
+                                <a href="#" onclick="showPage('philippines/home.html');">Philippines</a>
                             </div>
                         </div>
                         <div class="dropdown float-lg-left">
@@ -74,37 +75,41 @@
     <div class="container bg">
         <!-- <div class="row"> -->
         <div class="banner-padding">
-            <div class="banner">
-                <h1>The Divers Bar</h1>
+            <div id="banner">
+                <h1 id="bannertitle">The Divers Bar</h1>
             </div>
         </div>
         <!-- </div> -->
         <div class="row">
             <div class="col-md-2">
+                <div id="pagemenu" class="sticky">
+                </div>
             </div>
 
             <div class="blog col-md-8">
-                <h2>The idea</h2>
-                <p>As a former dive instructor, I heard The Question so much. Almost every new Open Water student asked: "Where
-                    should I go diving next? What is the best diving place in the world?". Well, there is no simple answer
-                    to it, as the world is so big and the dive spots are so many. This is why I created this website <i>'The Question, The Answers'</i>                    in trying to answer all.</p>
-                <p>All blogs are solemnly my opinion. Of course not every one will agree. You can only decide if and when you
-                    have been there too. But I tried to give a good idea for people that haven't yet had the opportunity
-                    to go and so make their decision easier.</p>
-                <p>If you do have a remark or a question, please contact me.</p>
-                <p>Greetings<br/>Eve</p>
-                <form action="mailto:evelynevanoverberghe@gmail.com" method="post" enctype="text/plain">
-                    First Name:<br/>
-                    <input type="text" name="name"><br/> Last Name:<br/>
-                    <input type="text" name="lastname"><br/> Email*:
-                    <br/>
-                    <input type="text" name="mail" required><br/> Comment:
-                    <br/>
-                    <input type="text" name="comment" size="100"><br/><br/>
-                    <input type="submit" value="send">
-                    <input type="reset" value="reset">
-                </form>
-                <hr/>
+                <div id="pagecontent">
+                    <h2>The idea</h2>
+                    <p>As a former dive instructor, I heard The Question so much. Almost every new Open Water student asked:
+                        "Where should I go diving next? What is the best diving place in the world?". Well, there is no simple
+                        answer to it, as the world is so big and the dive spots are so many. This is why I created this website
+                        <i>'The Question, The Answers'</i> in trying to answer all.</p>
+                    <p>All blogs are solemnly my opinion. Of course not every one will agree. You can only decide if and when
+                        you have been there too. But I tried to give a good idea for people that haven't yet had the opportunity
+                        to go and so make their decision easier.</p>
+                    <p>If you do have a remark or a question, please contact me.</p>
+                    <p>Greetings<br/>Eve</p>
+                    <form action="mailto:evelynevanoverberghe@gmail.com" method="post" enctype="text/plain">
+                        First Name:<br/>
+                        <input type="text" name="name"><br/> Last Name:<br/>
+                        <input type="text" name="lastname"><br/> Email*:
+                        <br/>
+                        <input type="text" name="mail" required><br/> Comment:
+                        <br/>
+                        <input type="text" name="comment" size="100"><br/><br/>
+                        <input type="submit" value="send">
+                        <input type="reset" value="reset">
+                    </form>
+                </div>
                 <footer>
                     <p>All is based on the opinions of X-mass Eve - Pictures Copyright &#169 X-mass Eve. All rights reserved</p>
                 </footer>
@@ -117,7 +122,6 @@
                 <a href="https://www.padi.com/" target="_blank"><img src="padi.gif" alt="PADI"></a>
                 <a href="http://www.cmas.org/" target="_blank"><img src="cmas2.png" alt="CMAS"></a>
                 <a href="https://www.bsac.com/" target="_blank"><img src="bsac.png" alt="BSAC"></a>
-
             </div>
         </div>
     </div>
