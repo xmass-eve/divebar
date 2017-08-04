@@ -158,13 +158,18 @@ body {
 }
 
 #banner h1 {
-     font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
     margin-top: 1em;
     font-size: 4em;
     font-weight: bold;
     color: beige;
 }
 
+.navbar {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif; 
+    color: #b3b3ff !important;
+    padding-top: 2.5em;
+}
 .sticky
 {
   position: -webkit-sticky;
@@ -204,15 +209,15 @@ body {
 .main{
 overflow: hidden;
 }
-.areas {
+/*.areas {
     position: fixed;
     bottom: 0;
     padding-left: 1em;
     float: left;
     width: 10%;
     overflow: hidden;
-    /*height: 100%;*/
-    /*position: fixed;*/
+    height: 100%;
+    position: fixed;
    }
 .areas a {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
@@ -220,12 +225,12 @@ overflow: hidden;
     margin-top: 1em;
     text-decoration: none;
     color: #b3b3ff !important;
-    /*margin-left: 1em;*/
+    /*margin-left: 1em;
 }
 
 .areas a:hover {
      color: #0000e6 !important;
-}
+}*/
 .blog {
     /* padding: 2em 15em 30em 5em; */
     padding-top: 3em;
