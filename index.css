@@ -175,6 +175,9 @@ body {
   padding-top: 3em;
   color: #b3b3ff !important;
 }
+.navbar a {
+    color: #b3b3ff !important;
+}
 
 .aside-nav {
     
